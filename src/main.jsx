@@ -52,9 +52,9 @@ let router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-    <ContextFunction>
       <RouterProvider router={router}>
-        <App />
+        <ContextFunction>
+          <App />
+        </ContextFunction>
       </RouterProvider>
-    </ContextFunction>
 )
